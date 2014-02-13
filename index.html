@@ -1,1 +1,33 @@
-MobileDeepLinking WebPage
+---
+layout: landing
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <div class="row">
+  	<div class="col-md-4">
+  		<img src="https://s3.amazonaws.com/tc-creatives/ebay_retargeting.gif" class="heroImg"/>
+  	</div>
+  	<div class="col-md-8">
+  	  <div class="header">
+  	    <h1 class="title">{{ site.name }}</h1>
+        <div>
+          The industry standard for mobile deeplinking. Easily and powerfully map custom url schemes to pages in your app.
+          <div class="row">
+            <div class="col-md-4">
+            <BR>
+              <a href="{{site.posts[0].url}}"><button class="btn btn-primary">Check it out!</button></a>
+            </div>
+          </div>
+        </div>
+  	  </div>
+  	</div>
+  	</div>
+</div>
+<div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
