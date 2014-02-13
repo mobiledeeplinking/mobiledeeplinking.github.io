@@ -1,7 +1,5 @@
 ---
-layout: post
-title:  "MobileDeepLinking Spec"
-date:   2014-02-12 16:50:45
+layout: default
 ---
 
 ### Background

@@ -1,3 +1,8 @@
+---
+title:  "MobileDeepLinking Spec"
+date:   2014-02-12 16:50:45
+---
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +23,24 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 site">
-              {{ content }}
+              <div class="col-md-offset-2 col-md-8">
+                <h2>{{ page.title }}</h2>
+                <p class="meta">Last Updated {{ page.date | date_to_string }}</p>
+                <div class="post">
+                {{ content }}
+                </div>
+
+                <div class="footer">
+                <div>
+                  <div class="pull-left">
+                    <a href="https://github.com/mobiledeeplinking">github.com/mobiledeeplinking</a>
+                  </div>
+                  <div class="pull-right">
+                    Copyright MobileDeepLinking.org 2014.
+                  </div>
+                </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
