@@ -2,69 +2,49 @@
 layout: default
 ---
 
-### Background
+### Introduction
 
-****
-The purpose of this document is to set an industry standard for mobile
-application deeplinking.
+Deeplinking is an important tool for mobile app publishers; it allows the
+seamless transition users from mobile contexts such as web pages, e-mail
+messages, and ad banners directly into an app, whether it's the app's default
+view or a particular destination inside the app, such as a specific article or
+product view, a user's shopping cart, or any other part of an application.
 
+Any mobile app can implement deeplinking. Mobile app deeplinking provides
+all of the flexibility that deeplinking in desktop and mobile web browsers
+provides. However, unlike on the web, implementing deeplinking in mobile apps requires
+a conscious design process on the part of publishers. This document provides
+guidance to product and marketing
+professionals to help them understand how mobile deeplinking works and how they
+may want to take advantage of it. For developers, this document provides guidance
+consisting of best practices as well as open source software development kits
+(SDKs) to make implementing effective deeplinking as simple as possible.
 
-At this time, the scope of this document includes the iOS and Android
-platforms, but we plan to explore supporting other platforms in the
-coming months.
+The intent of this guide is to provide context and recommendations
+based on the collective experiences of its authors, so that publishers can make
+informed decisions about implementing deeplinking in their mobile apps. The mobile
+app ecosystem is an evolving one, and we hope to provide consistently good advice
+on the best way to work within it.
 
+### Licensing
 
-This document and the accompanying iOS and Android libraries are
-intended to be Open Source – anyone is free to contribute. The
-documentation and links to the iOS and Android libraries will be hosted
-at www.mobiledeeplinking.org. The libraries will be hosted on GitHub at
-www.github.com/mobiledeeplinking.
+This document as well as the SDKs associated with the Mobile Deeplinking project
+are licensed under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29).
 
+### Contributions
+
+The Mobile Deeplinking project is a collaborative industry effort to provide a
+consistent, high-quality source of documentation, sample code, and SDKs to help
+mobile app publishers create the effective, seamless cross-media user experiences
+and marketing campaigns. We value contributions by individuals and organizations
+who share this mission, and we recommend using GitHub's pull request mechanism for
+submitting changes.
+
+### Conventions
 
 We use **NOTE:** throughout this document to provide more context on our
 thought process in particular areas and to better explain our rationale
 for making certain design decisions.
-
-
-Version history:
-
-
-Friday, Jan 24th – Version 0.1 distributed for feedback
-
-Monday, Jan 27th – Version 0.2 distributed for feedback
-
--   Split document into two parts
--   Implemented feedback from working group on Part 1 
--   Implemented feedback from working group on Part 2
--   Released first version of iOS implementation library on Github
-
-Wednesday, Feb 5th – Version 0.3 distributed for feedback
-
--   Part 1: minor edits, added use cases
--   Part 2: minor edits, added new Developer Introduction section
--   Released finalized iOS implementation library on Github
-
-
-Last updated: Wednesday, February 5, 2014, 21:00 PM EST
-
-
-### Intended Audience
-
-****
-The intended audience of this document is anyone who is interested in
-implementing mobile deeplinking or enhancing their current mobile
-deeplinking implementation.
-
-
-Our hope is that this document will ease the implementation burden for
-those that don’t already have mobile app deeplinking in place, but also
-provide new insights and suggestions for those that do have deeplinking
-implemented. 
-
-
-Think of this guide as a list of best practices and tools to guide your
-mobile deeplinking implementation; it does not need to be followed
-verbatim.
 
 ### Overview
 
@@ -843,4 +823,21 @@ Maven or Gradle.
     class.
 -   Try out a deep link!
 
+### Version history
 
+Last updated: Wednesday, February 5, 2014, 21:00 PM EST
+
+Wednesday, Feb 5th – Version 0.3 distributed for feedback
+
+-   Part 1: minor edits, added use cases
+-   Part 2: minor edits, added new Developer Introduction section
+-   Released finalized iOS implementation library on Github
+
+Monday, Jan 27th – Version 0.2 distributed for feedback
+
+-   Split document into two parts
+-   Implemented feedback from working group on Part 1 
+-   Implemented feedback from working group on Part 2
+-   Released first version of iOS implementation library on Github
+
+Friday, Jan 24th – Version 0.1 distributed for feedback
