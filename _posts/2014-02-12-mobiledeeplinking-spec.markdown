@@ -10,10 +10,11 @@ messages, and ad banners directly into an app, whether it's the app's default
 view or a particular destination inside the app, such as a specific article or
 product view, a user's shopping cart, or any other part of an application.
 
-Any mobile app can implement deeplinking, and mobile app deeplinking provides
+Any mobile app can implement deeplinking. Mobile app deeplinking provides
 all of the flexibility that deeplinking in desktop and mobile web browsers
-provides, implmenting deeplinking requires a conscious design process on the
-part of publishers. This document provides guidance to product and marketing
+provides. However, unlike on the web, implementing deeplinking in mobile apps requires
+a conscious design process on the part of publishers. This document provides
+guidance to product and marketing
 professionals to help them understand how mobile deeplinking works and how they
 may want to take advantage of it. For developers, this document provides guidance
 consisting of best practices as well as open source software development kits
