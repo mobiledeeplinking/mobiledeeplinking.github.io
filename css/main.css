@@ -82,27 +82,32 @@ h5 {
   margin-bottom:0px;
 }
 
-.post h2, .post h3, .post h4, .post h5 {
-  width:91%;
-}
+@media (min-width: 992px) {
+  .post h2, .post h3, .post h4, .post h5 {
+    width:91%;
+  }
 
-.post .highlight {
-  width:91%;
+  .post .highlight {
+    width:91%;
+  }
+
+  .post p {
+    width:91%;
+  }
+
+  .post h3:first-child {
+    margin-top:0px;
+  }
+
+  .post ul {
+    width:90%;
+  }
 }
 
 .post p {
   padding-top: 24px;
   margin:0px;
   font-size:16px;
-  width:91%;
-}
-
-.post h3:first-child {
-  margin-top:0px;
-}
-
-.post ul {
-  width:90%;
 }
 
 blockquote {
@@ -401,4 +406,10 @@ border-top: 1px solid #dddddd;
 
 a {
   color: #0086d8;
+}
+
+div.contact {
+  font-size: 15px;
+  margin-left: 18px;
+  margin-top: 0.5em;
 }
