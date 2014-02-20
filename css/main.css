@@ -1,3 +1,72 @@
+body {
+  line-height:24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mdl-title {
+  font-family: 'Abril Fatface', cursive; 
+  font-size:48px;
+  line-height:42px;
+  margin-top:6px;
+  color:#122F3F;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size:48px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+h2 {
+  font-size:36px;
+  margin-top:12px;
+  margin-bottom:0px;
+}
+
+h3 {
+  line-height:24px;
+  font-size:24px;
+  margin-top:24px;
+  margin-bottom:0px;
+}
+
+h4 {
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  font-size:21px;
+  margin-top:24px;
+  margin-bottom:0px;
+  line-height: 24px;
+}
+
+h5 {
+  line-height: 24px;
+  font-size:18px;
+  margin-top:24px;
+  margin-bottom:0px;
+}
+
+p {
+  padding-top: 24px;
+  margin:0px;
+  font-size:16px;
+}
+
+blockquote {
+  font-size: 14px;
+  font-style: italic;
+  padding: 6px 22px;
+  margin-top:24px;
+}
+
+blockquote p:first-child {
+  padding-top:0px;
+}
+
+.mdlnav {
+  float:right;
+}
 
 #home {
   color:white;
@@ -16,6 +85,10 @@
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
+}
+
+#postWrapper {
+  margin-top:2px;
 }
 
 /*****************************************************************************/
@@ -99,29 +172,36 @@
 }
 
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+  background-color: #f5f2f0;
+  border: none;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding: 11px;
 }
 
 .post ul, .post ol {
   margin-left: 1.35em;
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
+  border: none;
+  border-radius:3px;
+  background-color: #f5f2f0;
   padding: 0 .2em;
 }
 
 .post pre code {
-  border: none;
+  border: none;  
+  font-size:.9em;
 }
 
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
-  background-color: #333;
+  background-color: #f5f2f0;
   color: #FFF;
 }
 
@@ -155,7 +235,7 @@
   background-color:#003300;
 }
 
-@media (min-width: 979px) {
+@media (min-width: 992px) {
   #navdiv.affix-top {
     position: static;
     margin-top:2em;
@@ -164,12 +244,12 @@
   
   #navdiv.affix {
     position: fixed;
-    top:4em;
+    top:4.5em;
     width:228px;
   }
 }
 
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   #navdiv.affix {
     display:none;
   }
@@ -223,4 +303,33 @@
 .github > img {
   margin-top:5px;
   margin-right:5px;
+}
+
+hr {
+  margin-top:11px;
+  margin-bottom:11px;
+}
+
+code {
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  word-spacing:normal;
+  tab-size: 4;
+  text-shadow: 0 .08em #fff;
+  padding:0;
+  color: #4e4e4e;
+  font-size: 100%;
+  line-height: inherit;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 24px;
+}
+
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+padding: 11.5px 8px;
+line-height: 24px;
+vertical-align: top;
+border-top: 1px solid #dddddd;
 }
