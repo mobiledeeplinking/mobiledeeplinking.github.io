@@ -27,6 +27,8 @@ informed decisions about implementing deeplinking in their mobile apps. The mobi
 app ecosystem is an evolving one, and we hope to provide consistently good advice
 on the best way to work within it.
 
+Please direct any questions to [help@mobiledeeplinking.org](mailto:help@mobiledeeplinking.org).
+
 ### Licensing
 
 This document as well as the SDKs associated with the Mobile Deeplinking project
