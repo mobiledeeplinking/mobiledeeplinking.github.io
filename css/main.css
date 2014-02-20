@@ -333,3 +333,15 @@ line-height: 24px;
 vertical-align: top;
 border-top: 1px solid #dddddd;
 }
+
+.nav>.active>ul {
+  display:block;
+}
+
+.nav .nav {
+  display:none;
+}
+
+#title-link, #title-link:hover, #title-link:visited, #title-link:link, #title-link:active {
+  text-decoration: none;
+}
