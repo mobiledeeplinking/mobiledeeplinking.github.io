@@ -3,14 +3,49 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.mdl-title {
-  font-family: 'Abril Fatface', cursive; 
-  font-size:48px;
-  line-height:42px;
-  margin-top:6px;
-  color:#122F3F;
-  margin-bottom: 10px;
+
+@media (min-width: 992px) {
+  #headeraccentdiv {
+    margin-top:20px;
+    margin-right:75px;
+  }
+
+  .mdl-title {
+    height:48px;
+    margin-top:20px;
+    margin-bottom: 0px;
+    margin-left:16px;
+  }
 }
+
+@media (max-width: 991px) {
+  #headeraccentdiv {
+    margin-top:20px;
+    margin-right:0px;
+  }
+
+  .mdl-title {
+    height:48px;
+    margin-top:20px;
+    margin-bottom: 0px;
+    margin-left:0px;
+  }
+}
+
+@media (max-width: 525px) {
+  #headeraccentdiv {
+    display:none;
+  }
+
+  .mdl-title {
+    height:48px;
+    margin-top:20px;
+    margin-bottom: 10px;
+    margin-left:0px;
+  }
+}
+
+
 
 h1 {
   font-size:48px;
@@ -47,10 +82,27 @@ h5 {
   margin-bottom:0px;
 }
 
-p {
+.post h2, .post h3, .post h4, .post h5 {
+  width:91%;
+}
+
+.post .highlight {
+  width:91%;
+}
+
+.post p {
   padding-top: 24px;
   margin:0px;
   font-size:16px;
+  width:91%;
+}
+
+.post h3:first-child {
+  margin-top:0px;
+}
+
+.post ul {
+  width:90%;
 }
 
 blockquote {
@@ -58,6 +110,7 @@ blockquote {
   font-style: italic;
   padding: 6px 22px;
   margin-top:24px;
+  border-left: 5px solid #0058a0;
 }
 
 blockquote p:first-child {
@@ -238,7 +291,7 @@ blockquote p:first-child {
 @media (min-width: 992px) {
   #navdiv.affix-top {
     position: static;
-    margin-top:2em;
+    margin-top:0em;
     width:228px;
   }
   
@@ -344,4 +397,8 @@ border-top: 1px solid #dddddd;
 
 #title-link, #title-link:hover, #title-link:visited, #title-link:link, #title-link:active {
   text-decoration: none;
+}
+
+a {
+  color: #0086d8;
 }

@@ -5,8 +5,8 @@ layout: default
 ### Introduction
 
 Deeplinking is an important tool for mobile app publishers; it allows the
-seamless transition users from mobile contexts such as web pages, e-mail
-messages, and ad banners directly into an app, whether it's the app's default
+seamless transition of users from mobile contexts such as web pages, e-mail
+messages, and ad banners **directly into an app**, whether it's the app's default
 view or a particular destination inside the app, such as a specific article or
 product view, a user's shopping cart, or any other part of an application.
 
@@ -21,7 +21,7 @@ may want to take advantage of it. For developers, this document provides guidanc
 consisting of best practices as well as open source software development kits
 (SDKs) to make implementing effective deeplinking as simple as possible.
 
-The intent of this guide is to provide context and recommendations
+The intent of this guide is to provide **context and recommendations**
 based on the collective experiences of its authors, so that publishers can make
 informed decisions about implementing deeplinking in their mobile apps. The mobile
 app ecosystem is an evolving one, and we hope to provide consistently good advice
@@ -73,8 +73,8 @@ easier.
 
 #### 1.1 Deeplinking Introduction and Benefits
 
-Deeplinking is a methodology for launching a defined experience within a
-native mobile application via a link.
+Deeplinking is a methodology for **launching a defined experience within a
+native mobile application via a link**.
 
 
 Enabling deeplinking for a mobile application will allow you to invoke
@@ -110,8 +110,8 @@ when invoked, launches the mobile application.
 
 
 When thinking about deeplink structure, the best practice is to
-implement a URL, with a specific scheme name (designating the
-application) as well as routing parameters (path and query string).
+**implement a URL, with a specific scheme name (designating the
+application) as well as routing parameters (path and query string).**
 Unless you have very specific needs, we recommend using a simple URL
 structure as shown in the example below:
 
@@ -157,9 +157,8 @@ For the routing parameters (path and query string):
 
 #### 1.3 Examples
 
+
 Here are a few examples of deeplinks for popular apps on iOS:
-
-
 
  **Developer**           | **Deeplink – e.g.**     | **Purpose**             
  ----------------------- | ----------------------- | ----------------------- 
@@ -216,12 +215,12 @@ implementing deeplinking requires you to:
 
 -   Select the URI scheme you’ll be using, and declare it in the app’s
     manifest (discussed in more detail below). As discussed in Part 1.2,
-    the scheme name must be unique to your app, otherwise conflicts with
+    **the scheme name must be unique to your app**, otherwise conflicts with
     other apps may occur
--   Define the actions you want to launch by using a deeplink. Make sure
+-   **Define the actions you want to launch by using a deeplink.** Make sure
     these actions are in accordance with the URI syntax you chose. As
     mentioned in Part 1.2, the use of the URL syntax is highly
-    recommended (e.g. schemename://path?query\_string)
+    recommended (e.g. `schemename://path?query_string`)
 
 Once that’s done, you can start implementing the code that will handle
 the path and query string sections of the URL to launch the intended
@@ -244,8 +243,8 @@ it will call the AppDelegate with the deeplinking metadata.
 
 It is important to maintain a consistent state in your app while
 providing the desired experience. A deep link may be fired at any time
-in any app state, and it is your responsibility to keep the app in a
-stable state. 
+in any app state, and it is your responsibility to **keep the app in a
+stable state.**
 
 For example, this can mean allowing the user to return to
 the main screen of your app. To accomplish this, you must push the
@@ -272,8 +271,8 @@ central endpoint or many.
 
 It is important to maintain a consistent state in your app while
 providing the desired experience. An Android Activity will launch on top
-of the current context and it is your responsibility to ensure the
-appropriate view hierarchy is maintained. Additionally, it is important
+of the current context and it is your responsibility to **ensure the
+appropriate view hierarchy is maintained.** Additionally, it is important
 to have the necessary data ready for the Activity when it is loaded for
 the user.
 
@@ -296,7 +295,7 @@ The basic implementation setup is the same for both platforms:
 
 
 -   Create a deep linking URL scheme (e.g.
-    mobiledeeplinkingprojectdemo://)
+    `mobiledeeplinkingprojectdemo://`)
 -   Update the MobileDeepLinking library JSON configuration file with
     the appropriate URL and parameter mappings
 -   Update the app code to call the MobileDeepLinking library when the
@@ -309,7 +308,7 @@ libraries include a JSON file that configures the deep link mapping.
 #### 2.4 JSON Configuration
 
 Both the Android and iOS libraries are configured through a JSON file
-named deepLinkRoutes.json. 
+named `MobileDeepLinkingConfig.json`. 
 
 This file provides the ability to map
 incoming deeplink URLs to specific screens in an app, as well as
@@ -532,15 +531,15 @@ provides a robust fallback strategy for deeplink routing. The strategy,
 inspired by the JSR-315 Java Servlet Specification, is as follows:
 
 
--   The library will try to find an exact match of the host and path in
+-   The library will try to find an **exact match** of the host and path in
     the deeplink. If successful, the user will be routed to that route.
     If no route was found or validation (parameter regex, required,
     etc.) failed, then the below fallbacks will be taken.
--   The library will recursively try to match the longest path. This is
+-   The library will **recursively try to match the longest path.** This is
     done by trimming the trailing path component and running a match on
     the resulting path. For example, if `sales/5` did not match a route,
     the library would then fall back to matching on `sales.`
--   The library will attempt to match on each level of the path until it
+-   The library will attempt to match on **each level of the path** until it
     reaches the beginning of the URL. At that point it will route to the
     defaultRoute defined on the top level of the MobileDeepLinking.json
     file. If no defaultRoute was specified or it is unable to launch,
@@ -602,10 +601,10 @@ JSON configuration for iOS and Android routes.
 
 Screen Class Only:
 
--   If Using Storyboards: Specify the storyboard and identifier names.
--   If Using Nibs: Specify the class and identifier (insert nib name as
+-   **Using Storyboards**: Specify the storyboard and identifier names.
+-   **Using Nibs**: Specify the class and identifier (insert nib name as
     identifier)
--   If not using storyboards or nibs: Specify the class.
+-   **Not using storyboards or nibs**: Specify the class.
 
 Custom Handlers Only: omit the class, storyboard, and identifier
 properties. Specify one or more handler functions to be utilized.
@@ -617,10 +616,10 @@ storyboard, identifier, and handler values.
 ##### Android
 
 
--   Screen Class Only: specify the Activity class.
--   Custom Handlers Only: omit the class property. Specify one or more
+-   **Screen Class Only**: specify the Activity class.
+-   **Custom Handlers Only**: omit the class property. Specify one or more
     handler functions to be utilized.
--   Screen Class and Custom Handlers: specify the Activity class and
+-   **Screen Class and Custom Handlers**: specify the Activity class and
     handler values.
 
 
@@ -747,7 +746,7 @@ The MobileDeepLinking library for iOS is available on GitHub and through
 CocoaPods.
 
 
-Update the deepLinkRoutes.json with the appropriate routes and class
+Update the `MobileDeepLinkingConfig.json` with the appropriate routes and class
 names.
 
 Configure the Custom URL Scheme (skip below if you already have this
@@ -756,13 +755,13 @@ configured)
 -   Click on your project root in the Project Navigator to view the
     Project Properties
 -   Click on your project under Targets
--   Go to Info -\> URL Types
+-   Go to Info -> URL Types
 -   Click the plus icon to add a URL Type
 -   For the Identifier field, input your app’s Bundle Identifier value
-    (e.g. mobiledeeplinkingprojectdemoDemoApp)
+    (e.g. `mobiledeeplinkingprojectdemoDemoApp`)
 -   For the URL Schemes field, input your desired deeplink scheme.
 
-Drop the MobileDeepLinking.framework file and deepLinkRoutes.json into
+Drop the `MobileDeepLinking.framework` file and `MobileDeepLinkingConfig.json` into
 Xcode.
 
 Import `MobileDeepLinking.h` in your AppDelegate class.
@@ -770,7 +769,7 @@ Import `MobileDeepLinking.h` in your AppDelegate class.
 Register custom function handlers if needed in the AppDelegate class.
 
 Place the following line of code into the below method in your
-AppDelegate.m:
+`AppDelegate.m`:
 
 ```obj-c
 - application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
@@ -791,9 +790,9 @@ Maven Central. It is available for standalone download or use through
 Maven or Gradle.
 
 
--   Update the deepLinkRoutes.json with the appropriate routes and class
+-   Update the `MobileDeepLinkingConfig.json` with the appropriate routes and class
     names.
--   Drop the library and deepLinkRoutes.json into your project and
+-   Drop the library and `MobileDeepLinkingConfig.json` into your project and
     reference it in your settings.
 -   Place the following XML snippet into your AndroidManifest.xml:
 
