@@ -36,12 +36,6 @@ title:  "MobileDeepLinking Spec"
               </h1>
             </a>
           </div>
-          <!-- <div class="col-md-6">
-            <ul class="nav mdlnav">
-              <li><a href="/">HOME</a></li>
-              <li><a href="/about.html">ABOUT</a></li>
-            </ul>
-          </div> -->
         </div>
         {{ content }}
 
@@ -65,10 +59,10 @@ title:  "MobileDeepLinking Spec"
 <script type="text/javascript">
   jQuery(document).ready(function($) {
  
-  $('body').scrollspy({ target: '#sidebar', offset:80 });
+  $('body').scrollspy({ target: '#sidebar', offset:25 });
     $(".nav > li > a").click(function(event){   
       event.preventDefault();
-      $('html,body').animate({scrollTop:$(this.hash).offset().top - 15}, 300);
+      $('html,body').animate({scrollTop:$(this.hash).offset().top - 12}, 300);
     });
   });
 </script>
