@@ -355,7 +355,7 @@ blockquote p:first-child {
 .github {
   font-size:15px;
   margin-left:18px;
-  margin-top:1em;
+  margin-top:48px;
 }
 
 .github > img {
@@ -411,7 +411,7 @@ a {
 div.contact {
   font-size: 15px;
   margin-left: 18px;
-  margin-top: 0.5em;
+  margin-top: 12px;
 }
 
 .fa-envelope {
@@ -427,7 +427,7 @@ div.contact {
 
 .logos {
   margin-left:18px;
-  margin-top:0.5em;
+  margin-top:6px;
 }
 
 .logos img {
