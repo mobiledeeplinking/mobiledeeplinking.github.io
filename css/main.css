@@ -302,7 +302,7 @@ blockquote p:first-child {
   
   #navdiv.affix {
     position: fixed;
-    top:4.5em;
+    top:3em;
     width:228px;
   }
 }
@@ -412,4 +412,24 @@ div.contact {
   font-size: 15px;
   margin-left: 18px;
   margin-top: 0.5em;
+}
+
+.fa-envelope {
+  font-size: 24px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.mail-link {
+  line-height:24px;
+  vertical-align: top;
+}
+
+.logos {
+  margin-left:18px;
+  margin-top:0.5em;
+}
+
+.logos img {
+  height:24px;
 }
