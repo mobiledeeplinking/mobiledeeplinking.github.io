@@ -4,28 +4,13 @@ layout: default
 
 ### Introduction
 
-Deeplinking is an important tool for mobile app publishers; it allows the
-seamless transition of users from mobile contexts such as web pages, e-mail
-messages, and ad banners **directly into an app**, whether it's the app's default
-view or a particular destination inside the app, such as a specific article or
-product view, a user's shopping cart, or any other part of an application.
+Mobile applications that support deeplinking are essential for marketers who want to run successful campaigns.  Deeplinking connects a unique url to a specific page in a mobile app, seamlessly linking users from mobile or web advertisements to relevant content. It also creates dynamic and engaging ad experiences for users. 
 
-Any mobile app can implement deeplinking. Mobile app deeplinking provides
-all of the flexibility that deeplinking in desktop and mobile web browsers
-provides. However, unlike on the web, implementing deeplinking in mobile apps requires
-a conscious design process on the part of publishers. 
+Deeplinking improves customer experience by reducing friction between clicking on an ad and arriving at content.  This document will show you how to take advantage of mobile deeplinking to give your users the experience they want and give you the conversion rates you need. 
 
-This document provides guidance to product and marketing
-professionals to help them understand how mobile deeplinking works and how they
-may want to take advantage of it. For developers, this document provides guidance
-consisting of best practices as well as open source software development kits
-(SDKs) to make implementing effective deeplinking as simple as possible.
+In addition to guidelines for best practices, it also contains links to open source software development kits (SDKs) so developers can implement effective deeplinking strategies as simply as possible. 
 
-The intent of this guide is to provide **context and recommendations**
-based on the collective experiences of its authors, so that publishers can make
-informed decisions about implementing deeplinking in their mobile apps. The mobile
-app ecosystem is an evolving one, and we hope to provide consistently good advice
-on the best way to work within it.
+This guide provides **context and recommendations** based on the collective experiences of its authors so you can make informed decisions about implementing deeplinking in your mobile apps. 
 
 Please direct any questions to [help@mobiledeeplinking.org](mailto:help@mobiledeeplinking.org).
 
