@@ -8,7 +8,7 @@ Deeplinking is a methodology for launching a native mobile application via a lin
 
 Deeplinking connects a unique url to a specific page in a mobile app, seamlessly linking users to relevant content.
 
-In addition to guidelines and best practices, the document also contains links to open source software development kits (SDKs) so developers can implement effective deeplinking strategies as simply as possible.
+In addition to guidelines and best practices, this document also contains links to open source software development kits (SDKs) so developers can implement effective deeplinking strategies as simply as possible.
 
 This guide provides context and recommendations based on the collective experiences of its authors so you can make informed decisions about implementing deeplinking in your mobile apps.
 
