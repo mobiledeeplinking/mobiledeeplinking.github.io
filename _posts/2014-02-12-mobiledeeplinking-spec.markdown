@@ -23,7 +23,7 @@ are licensed under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD
 
 The Mobile Deeplinking project is a collaborative industry effort to provide a
 consistent, high-quality source of documentation, sample code, and SDKs to help
-mobile app publishers create the effective, seamless cross-media user experiences
+mobile app publishers create effective, seamless cross-media user experiences
 and marketing campaigns. 
 
 We value contributions by individuals and organizations
@@ -42,15 +42,14 @@ for making certain design decisions.
 This document is broken up into two parts: 
 
 
-Part 1 provides an introduction and overview about mobile application
+Part 1 provides an introduction and overview of mobile application
 deeplinking and facilitates the thinking, design, communication and
 planning that the marketing, product, and technology team members must
 do to ensure a successful implementation. 
 
 
 Part 2 is intended for developers and provides implementation details as
-well as a deeplinking framework intended to make getting started
-easier. 
+well as a deeplinking framework intended make it easier to get started.
 
 
 ### Part 1: Introduction and Overview
@@ -58,13 +57,13 @@ easier.
 
 #### 1.1 Deeplinking Introduction and Benefits
 
-Deeplinking is a methodology for **launching a defined experience within a
+Deeplinking is a methodology for **launching a
 native mobile application via a link**.
 
 
 Enabling deeplinking for a mobile application will allow you to invoke
-the deeplink in order to open the app and point directly to a homepage,
-product pages, shopping cart, etc, much as you would on a website.
+deeplinks that open an app and launch specific, defined screens within the app, such as the homepage,
+product pages, and shopping cart, much as you would on a website.
 
 
 For example, just as you might link to a particular product on your
@@ -74,7 +73,7 @@ website –
     http://www.mobiledeeplinking.org/product/123
 
 
-You can do the same thing for your mobile app – 
+You can link to a product screen in your mobile app – 
 
 
     mobiledeeplinkingprojectdemo://product/123
@@ -88,15 +87,14 @@ Store or Google Play.
 
 #### 1.2 Deeplink Structure
 
-A deeplink functions in a similar way as a webpage URL. It is composed
+A deeplink functions much like a traditional hyperlink on a webpage. It is composed
 of separate elements that make up what is referred to as a Uniform
 Resource Identifier (URI). The URI contains all the information that,
-when invoked, launches the mobile application.
+when invoked, launches a mobile application with a specific screen.
 
 
 When thinking about deeplink structure, the best practice is to
-**implement a URL, with a specific scheme name (designating the
-application) as well as routing parameters (path and query string).**
+**implement a URL with a unique scheme name and routing parameters (path and query strings) that represent custom actions to take in the app.**
 Unless you have very specific needs, we recommend using a simple URL
 structure as shown in the example below:
 
@@ -227,7 +225,7 @@ it will call the AppDelegate with the deeplinking metadata.
 
 
 It is important to maintain a consistent state in your app while
-providing the desired experience. A deep link may be fired at any time
+providing the desired experience. A deeplink may be fired at any time
 in any app state, and it is your responsibility to **keep the app in a
 stable state.**
 
@@ -279,15 +277,15 @@ both iOS and Android.
 The basic implementation setup is the same for both platforms:
 
 
--   Create a deep linking URL scheme (e.g.
+-   Create a deeplinking URL scheme (e.g.
     `mobiledeeplinkingprojectdemo://`)
 -   Update the MobileDeepLinking library JSON configuration file with
     the appropriate URL and parameter mappings
 -   Update the app code to call the MobileDeepLinking library when the
-    app is launched from a deep link
+    app is launched from a deeplink
 
 This spec is accompanied by libraries for both iOS and Android. Both
-libraries include a JSON file that configures the deep link mapping. 
+libraries include a JSON file that configures the deeplink mapping. 
 
 
 #### 2.4 JSON Configuration
@@ -304,7 +302,7 @@ handlers, validation, and logging.
 > NOTE: Android is typically configured through XML and iOS is
 typically configured through plists. We opted to use a JSON
 configuration to minimize source code updates and to allow for one
-standard deep linking methodology across both Android and iOS. 
+standard deeplinking methodology across both Android and iOS. 
 
 > This allows you to use an identical configuration format when developing
 cross platform. The library also allows for custom client logic through
@@ -345,7 +343,7 @@ about the JSON properties can be found after the sample files.
 }
 ```
 
-In the above example, the deep link
+In the above example, the deeplink
 `mobiledeeplinkingprojectdemo://reservations/1234` would route to the
 ReservationDetailsActivity and pass on the path parameter
 reservationId=1234 to this Activity class. Further details on these
@@ -441,7 +439,7 @@ iPhone-only or iPad-only app, it can simply have one of the attributes.
 
 ##### Routes Object
 
-Contains a list of key value pairs.
+Contains a list of key-value pairs.
 
 | **Attribute Name**      | **Type**                | **Comments**            |
 | :----------------------- | :----------------------- | :----------------------- |
@@ -464,7 +462,7 @@ Contains a list of key value pairs.
 
 ##### Route Parameters Object
 
-Contains a list of key value pairs.
+Contains a list of key-value pairs.
 
 | **Attribute**           | **Type**                | **Comments**            |
 | :----------------------- | :----------------------- | :----------------------- |
@@ -534,8 +532,7 @@ inspired by the JSR-315 Java Servlet Specification, is as follows:
 #### 2.7 Routing To View Classes and Custom Handlers
 
 The MobileDeepLinking library was created to allow you to quickly get
-set up while also allowing for the flexibility of extra functionality
-through the use of custom callback `handlers.`
+set up while also providing added functionality through the use of custom callback `handlers.`
 
 
 When specifying the `defaultRoute` or the `routes` properties in the
@@ -557,8 +554,7 @@ deeplinks, while preserving simplicity for more straightforward
 use-cases. 
 
 
-Route Parameters extracted from the deeplink, both path and query
-parameters, will be set on the iOS View Controller through the
+Both path and query parameters that are extracted from the deeplink will be set on the iOS View Controller through the
 [Key-Value-Coding mechanism](https://developer.apple.com/library/mac/documentation/cocoa/conceptual/KeyValueCoding/Articles/KeyValueCoding.html\#//apple_ref/doc/uid/10000107-SW1).
 
 For example:
@@ -611,12 +607,12 @@ storyboard, identifier, and handler values.
 #### 2.8 Registering Handlers
 
 Custom callback handlers (if needed) should be registered on application
-start up. The handler names specified when registering must be the
+startup. The handler names specified when registering must be the
 values utilized in the JSON configuration. 
 
 **The order in which the
 handlers are defined in the JSON configuration is the order in which
-they will be executed.** Handlers can be re-used across multiple routes
+they will be executed. Additionally, any modifications made to a handler's NSDictionary/Map will be persisted to the next handler in the chain.** Handlers can be re-used across multiple routes
 that require the same functionality (authentication, analytics, etc).
 
 
@@ -764,7 +760,7 @@ Place the following line of code into the below method in your
 ```
 
 
--   Try out a deep link!
+-   Try out a deeplink!
 
 
 ##### Android
@@ -797,7 +793,7 @@ Maven or Gradle.
 
 -   Register custom function handlers if needed in the Application
     class.
--   Try out a deep link!
+-   Try out a deeplink!
 
 ### Part 3: Implementing the Spec
 
