@@ -6,7 +6,7 @@ layout: default
 
 Deeplinking is a methodology for launching a native mobile application via a link.
 
-Deeplinking connects a unique url to a specific page in a mobile app, seamlessly linking users to relevant content.
+Deeplinking connects a unique url to a defined action in a mobile app, seamlessly linking users to relevant content.
 
 In addition to guidelines and best practices, this document also contains links to open source software development kits (SDKs) so developers can implement effective deeplinking strategies as simply as possible.
 
@@ -50,10 +50,6 @@ well as a deeplinking framework intended make it easier to get started.
 
 
 #### 1.1 Deeplinking Introduction and Benefits
-
-Deeplinking is a methodology for **launching a
-native mobile application via a link**.
-
 
 Enabling deeplinking for a mobile application will allow you to invoke
 deeplinks that open an app and launch specific, defined screens within the app, such as the homepage,
