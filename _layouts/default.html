@@ -1,5 +1,5 @@
 ---
-title:  "Mobile Deeplinking Industry Standard Specification"
+title:  "MobileDeepLinking.org"
 ---
 
 <!DOCTYPE html>
@@ -23,16 +23,16 @@ title:  "Mobile Deeplinking Industry Standard Specification"
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="10">
   <div class="container">
     <div class="row">
       <div class="site">
         <div class="col-md-offset-1 col-md-5 col-xs-6">
-            <div >
-              <a href="/" id="title-link">
-                <img src="/img/mobiledeeplinking.png" class="mdl-title">
-              </a>
-            </div>
+          <div >
+            <a href="/" id="title-link">
+              <img src="/img/mobiledeeplinking.png" class="mdl-title">
+            </a>
+          </div>
         </div>
         <div class="col-xs-6">
           <div id="headeraccentdiv">
@@ -41,7 +41,7 @@ title:  "Mobile Deeplinking Industry Standard Specification"
         </div>
         <div class="col-xs-12">
           {{ content }}
-        
+          
           <div class="footer">
             <div>
               <div class="pull-left">
@@ -54,26 +54,24 @@ title:  "Mobile Deeplinking Industry Standard Specification"
           </div>
         </div>
       </div>
-</div>
-</div>
+    </div>
+  </div>
 </div>
 </body>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   jQuery(document).ready(function($) {
- 
-  $('body').scrollspy({ target: '#sidebar', offset:25 });
     $(".nav > li > a").click(function(event){   
       event.preventDefault();
-      $('html,body').animate({scrollTop:$(this.hash).offset().top - 12}, 300);
+      $('html,body').animate({scrollTop:$(this.hash).offset().top - 9}, 300);
     });
   });
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-48266284-1', 'mobiledeeplinking.org');

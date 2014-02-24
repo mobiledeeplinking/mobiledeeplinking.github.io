@@ -294,13 +294,13 @@ blockquote p:first-child {
 }
 
 @media (min-width: 992px) {
-  #navdiv.affix-top {
+  #sidebar.affix-top {
     position: static;
     margin-top:0em;
     width:228px;
   }
   
-  #navdiv.affix {
+  #sidebar.affix {
     position: fixed;
     top:3em;
     width:228px;
@@ -308,11 +308,11 @@ blockquote p:first-child {
 }
 
 @media (max-width: 991px) {
-  #navdiv.affix {
+  #sidebar.affix {
     display:none;
   }
 
-  #navdiv.affix-top {
+  #sidebar.affix-top {
     display:none;
   }
 }
@@ -355,7 +355,7 @@ blockquote p:first-child {
 .github {
   font-size:15px;
   margin-left:18px;
-  margin-top:48px;
+  margin-top:24px;
 }
 
 .github > img {
@@ -386,10 +386,10 @@ table {
 }
 
 table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
-padding: 11.5px 8px;
-line-height: 24px;
-vertical-align: top;
-border-top: 1px solid #dddddd;
+  padding: 11.5px 8px;
+  line-height: 24px;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
 }
 
 .nav>.active>ul {
@@ -411,7 +411,6 @@ a {
 div.contact {
   font-size: 15px;
   margin-left: 18px;
-  margin-top: 12px;
 }
 
 .fa-envelope {
@@ -427,9 +426,12 @@ div.contact {
 
 .logos {
   margin-left:18px;
-  margin-top:6px;
 }
 
 .logos img {
   height:24px;
+}
+
+#sidebar hr {
+  margin-left:18px;
 }

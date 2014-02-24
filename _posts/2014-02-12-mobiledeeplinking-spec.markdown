@@ -4,13 +4,13 @@ layout: default
 
 ### Introduction
 
-Mobile applications that support deeplinking are essential for marketers who want to run successful campaigns.  Deeplinking connects a unique url to a specific page in a mobile app, seamlessly linking users from mobile or web advertisements to relevant content. It also creates dynamic and engaging ad experiences for users. 
+Deeplinking is a methodology for launching a native mobile application via a link.
 
-Deeplinking improves customer experience by reducing friction between clicking on an ad and arriving at content.  This document will show you how to take advantage of mobile deeplinking to give your users the experience they want and give you the conversion rates you need. 
+Deeplinking connects a unique url to a specific page in a mobile app, seamlessly linking users to relevant content.
 
-In addition to guidelines for best practices, it also contains links to open source software development kits (SDKs) so developers can implement effective deeplinking strategies as simply as possible. 
+In addition to guidelines and best practices, the document also contains links to open source software development kits (SDKs) so developers can implement effective deeplinking strategies as simply as possible.
 
-This guide provides **context and recommendations** based on the collective experiences of its authors so you can make informed decisions about implementing deeplinking in your mobile apps. 
+This guide provides context and recommendations based on the collective experiences of its authors so you can make informed decisions about implementing deeplinking in your mobile apps.
 
 Please direct any questions to [help@mobiledeeplinking.org](mailto:help@mobiledeeplinking.org).
 
@@ -29,12 +29,6 @@ and marketing campaigns.
 We value contributions by individuals and organizations
 who share this mission, and we recommend using GitHub's pull request mechanism for
 submitting changes.
-
-### Conventions
-
-We use **NOTE:** throughout this document to provide more context on our
-thought process in particular areas and to better explain our rationale
-for making certain design decisions.
 
 ### Overview
 
@@ -806,22 +800,3 @@ The iOS Library can be found [here](http://www.github.com/mobiledeeplinking/mobi
 #### 3.2 Android
 
 The Android Library can be found [here](http://www.github.com/mobiledeeplinking/mobiledeeplinking-android).
-
-### Version history
-
-Last updated: Wednesday, February 5, 2014, 21:00 PM EST
-
-Wednesday, Feb 5th – Version 0.3 distributed for feedback
-
--   Part 1: minor edits, added use cases
--   Part 2: minor edits, added new Developer Introduction section
--   Released finalized iOS implementation library on Github
-
-Monday, Jan 27th – Version 0.2 distributed for feedback
-
--   Split document into two parts
--   Implemented feedback from working group on Part 1 
--   Implemented feedback from working group on Part 2
--   Released first version of iOS implementation library on Github
-
-Friday, Jan 24th – Version 0.1 distributed for feedback
