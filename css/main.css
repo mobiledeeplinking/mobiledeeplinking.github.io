@@ -431,6 +431,7 @@ div.contact {
 .logos img {
   max-height:24px;
   width:62px;
+  margin-top:6px;
 }
 
 #sidebar hr {
