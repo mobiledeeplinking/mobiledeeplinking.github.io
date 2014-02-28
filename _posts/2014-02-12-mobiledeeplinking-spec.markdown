@@ -368,7 +368,7 @@ configurations are below.
       ],
       "routeParameters": {
         "saleId": {
-          "required": true,
+          "required": "true",
           "regex": "[0-9]"
         },
         "utmSource": {
