@@ -346,7 +346,7 @@ configurations are below.
 
 ```json
 {
-  "logging": true,
+  "logging": "true", /* must be a string data type */
   "storyboard": {
     "iPhone": "MainStoryboard_iPhone",
     "iPad": "MainStoryboard_iPad"
