@@ -252,7 +252,7 @@ blockquote p:first-child {
 }
 
 .post pre code {
-  border: none;  
+  border: none;
   font-size:.9em;
 }
 
@@ -299,7 +299,7 @@ blockquote p:first-child {
     margin-top:0em;
     width:228px;
   }
-  
+
   #sidebar.affix {
     position: fixed;
     top:3em;
@@ -428,9 +428,7 @@ div.contact {
   margin-left:18px;
 }
 
-.logos img {
-  max-height:24px;
-  width:62px;
+#contributors {
   margin-top:6px;
 }
 
